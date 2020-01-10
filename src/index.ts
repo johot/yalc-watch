@@ -42,7 +42,7 @@ if (packageJson.yalcWatch) {
       process.exit();
     })
     .on("restart", function(files: any) {
-      console.log(chalk.blueBright("Found changes in files: ", files));
+      console.log(chalk.blueBright("Found changes in files:", chalk.magentaBright(files)));
       console.log(chalk.blueBright("Trying to push new yalc package..."));
     });
 
