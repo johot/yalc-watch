@@ -12,7 +12,7 @@
   "scripts": {
     "dev": "ts-node src/index",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && yalc push",
+    "build": "tsc",
     "lb": "npm run build && yalc publish",
     "bp": "tsc && npm publish"
   },
