@@ -1,0 +1,35 @@
+{
+  "name": "yalc-watch",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "yalc-watch": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "ts-node src/index",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && yalc push",
+    "lb": "npm run build && yalc publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/concurrently": "^4.1.0",
+    "@types/node": "^13.1.5",
+    "@types/nodemon": "^1.19.0",
+    "chalk": "^3.0.0",
+    "commander": "^4.1.0",
+    "concurrently": "^5.0.2",
+    "nodemon": "^2.0.2",
+    "sync-directory": "^2.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.4",
+    "yalc": "^1.0.0-pre.34"
+  }
+}
