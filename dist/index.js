@@ -17,7 +17,7 @@ if (packageJson.yalcWatch) {
     if (yalcWatch.watchFolder === undefined ||
         yalcWatch.buildWatchCommand === undefined ||
         yalcWatch.extensions === undefined)
-        throw new Error("Invalid yalc watch config" + JSON.stringify(yalcWatch));
+        throw new Error('Invalid yalc watch config: "' + JSON.stringify(yalcWatch) + '"');
     nodemon_1.default({
         watch: [yalcWatch.watchFolder],
         ext: yalcWatch.extensions,
