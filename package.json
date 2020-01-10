@@ -1,6 +1,6 @@
 {
   "name": "yalc-watch",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -13,7 +13,8 @@
     "dev": "ts-node src/index",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && yalc push",
-    "lb": "npm run build && yalc publish"
+    "lb": "npm run build && yalc publish",
+    "bp": "tsc && npm publish"
   },
   "keywords": [],
   "author": "",
